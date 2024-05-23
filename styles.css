@@ -12,11 +12,13 @@ h1 {
     font-weight: 600;
     letter-spacing: 0.2px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0.25rem 0.5rem; /* Adjust the vertical spacing here */
+    border-spacing: 0.25rem 0.5rem;
+    margin: auto;
 }
 
 th::after {
