@@ -3,8 +3,14 @@
     box-sizing: border-box;
 }
 
+.container {
+    margin: auto;
+    width: fit-content;
+}
+
 body {
     padding: 2.25rem;
+    width: 100%;
 }
 
 h1 {
