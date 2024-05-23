@@ -1,0 +1,94 @@
+* {
+    font-family: 'SF Pro';
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2.25rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-bottom: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0.25rem 0.5rem; /* Adjust the vertical spacing here */
+}
+
+th::after {
+    content: "";
+    display: block;
+    height: 0.5rem; /* Adjust the margin height here */
+}
+
+td {
+    width: 8rem;
+    height: 2.5rem;
+    position: relative; /* Added to ensure absolute positioning works within */
+}
+
+th {
+    text-align: left;
+    padding: 0.375rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 40%);
+}
+
+.color-input {
+    width: 100%;
+    height: inherit;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    appearance: none;
+    position: relative;
+    z-index: 1;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.color-input::-webkit-color-swatch {
+    border: none;
+    border-radius: 0.375rem;
+}
+
+.color-input::-moz-color-swatch {
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.input {
+    padding: 0.7rem;
+    font-size: 15px;
+    width: 8rem;
+    height: inherit;
+    border: none;
+    background-color: #ebeced;
+    border-radius: 0.25rem;
+}
+
+.input:focus {
+    outline: none;
+    border: none;
+}
+
+.color-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 0.75rem;
+    pointer-events: none; /* Ensure the text is not interactive */
+    z-index: 2; /* Make sure the text is above the color input */
+}
